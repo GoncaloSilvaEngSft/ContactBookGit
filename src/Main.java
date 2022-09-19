@@ -165,7 +165,9 @@ public class Main {
     private static void getNumber(Scanner in, ContactBook cBook) {
         int phone;
         phone = in.nextInt();in.nextLine();
-
+        if(cBook.hasPhone(phone))
+        System.out.println(cBook.getContact(phone));
+        else System.out.println("Phone number does not exist.");
     }
 
     private static void checkEqualPhoneNumbers(ContactBook cBook) {
