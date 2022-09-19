@@ -60,8 +60,10 @@ public class Main {
                     listAllContacts(cBook);
                     break;
                 case GIVEN_NUMBER:
+                    getNumber(in, cBook);
                     break;
                 case EQUAL_PHONES_NUMBER:
+                    checkEqualPhoneNumbers(cBook);
                     break;
                 default:
                     System.out.println(COMMAND_ERROR);
@@ -73,6 +75,8 @@ public class Main {
         System.out.println();
         in.close();
     }
+
+
 
     private static String getCommand(Scanner in) {
         String input;
@@ -157,4 +161,12 @@ public class Main {
         }
         else System.out.println(BOOK_EMPTY);
     }
+
+    private static void getNumber(Scanner in, ContactBook cBook) {
+
+    }
+
+    private static void checkEqualPhoneNumbers(ContactBook cBook) {
+    }
+
 }
