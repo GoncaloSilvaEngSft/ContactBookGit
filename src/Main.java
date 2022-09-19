@@ -15,6 +15,10 @@ public class Main {
     public static final String LIST_CONTACTS  = "LC";
     public static final String QUIT           = "Q";
 
+    public static final String GIVEN_NUMBER = "GN";
+
+    public static final String EQUAL_PHONES_NUMBER = "EP";
+
     //Constantes que definem as mensagens para o utilizador
     public static final String CONTACT_EXISTS = "contactBook.Contact already exists.";
     public static final String NAME_NOT_EXIST = "contactBook.Contact does not exist.";
@@ -24,6 +28,8 @@ public class Main {
     public static final String BOOK_EMPTY = "contactBook.Contact book empty.";
     public static final String QUIT_MSG = "Goodbye!";
     public static final String COMMAND_ERROR = "Unknown command.";
+
+
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -52,6 +58,10 @@ public class Main {
                     break;
                 case LIST_CONTACTS:
                     listAllContacts(cBook);
+                    break;
+                case GIVEN_NUMBER:
+                    break;
+                case EQUAL_PHONES_NUMBER:
                     break;
                 default:
                     System.out.println(COMMAND_ERROR);
