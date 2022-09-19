@@ -56,8 +56,8 @@ public class ContactBook {
     }
 
     //Pre: phone != null && hasPhone(phone)
-    public Contact getContact(int phone) {
-        return contacts[searchphoneIndex(phone)];
+    public String getContact(int phone) {
+        return contacts[searchphoneIndex(phone)].getName();
     }
 
     //Pre: name != null && hasContact(name)
