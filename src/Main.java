@@ -169,7 +169,7 @@ public class Main {
     }
 
     private static void checkEqualPhoneNumbers(ContactBook cBook) {
-        if(cBook.checkEqualPhoneNumbers())
+        if(cBook.checkForEqualPhoneNumbers())
             System.out.println("There are contacts that share phone numbers.");
         else System.out.println("All contacts have different phone numbers");
     }
