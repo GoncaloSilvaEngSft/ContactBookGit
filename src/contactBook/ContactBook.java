@@ -82,7 +82,7 @@ public class ContactBook {
         if (found) result = i;
         return result;
     }
-
+    /* Method to search the index of the phone number in the contacts array*/
     private int searchphoneIndex(int phone) {
         int i = 0;
         int result = -1;
@@ -116,6 +116,7 @@ public class ContactBook {
         return contacts[currentContact++];
     }
 
+    /* Method to check if there are different contacts with the same phone number*/
     public boolean checkForEqualPhoneNumbers(){
         for (int i=0; i<counter; i++){
             for (int j= i + 1; j<counter; j++){
